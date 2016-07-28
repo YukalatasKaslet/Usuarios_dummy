@@ -3,7 +3,10 @@ class Users < ActiveRecord::Migration
     create_table :users do |t|
       t.string    :name
       t.string    :email
-      t.string    :password
+      #has_secure_password
+      #Adds methods to set and authenticate against a BCrypt password.
+      #This mechanism requires you to hace a << password_digest >> attribute
+      t.string    :password_digest
 
     end
   end#mth change
