@@ -7,6 +7,7 @@ class Users < ActiveRecord::Migration
       #Adds methods to set and authenticate against a BCrypt password.
       #This mechanism requires you to hace a << password_digest >> attribute
       t.string    :password_digest
+      t.string    :password_confirmation
 
     end
   end#mth change
